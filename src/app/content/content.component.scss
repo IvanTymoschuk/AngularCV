@@ -1,0 +1,22 @@
+.modal-body{
+    font-size: 1.5rem;
+    a{
+        text-decoration: none;
+    }
+}
+.container-fluid{
+    margin:1rem;
+}
+
+.imgbox{
+    
+    margin-left: 1rem;
+    img{
+        display:flex;
+        width: 300px;
+        height: 380px;
+    }
+    button{
+        flex:1;
+    }
+}

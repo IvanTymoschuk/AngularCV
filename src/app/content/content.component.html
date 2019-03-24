@@ -1,20 +1,75 @@
+<div class="container-fluid">
+  
+<div class="row">
+  
+
+<div class="imgbox">
+    <div class="row"><img src="../../assets/IMG_20181124_205809.jpg" class="rounded float-left" ></div>
+    <div class="row"><button type="button" class="btn btn-info" (click)="openModal(template)">Links</button></div>
+  </div>
 <div class="container">
+  
+  <div class="row">
+    <div class="col-3">
+        <h4 class="header">NAME</h4>
+    </div>
+    <div class="col-3">
+        <h5 class="header">Ivan Tymoshuk</h5>
+    </div>
+    <div class="col-3">
+        <h4 class="header">AGE</h4>
+    </div>
+    <div class="col-3">
+        <h5 class="header">20</h5>
+    </div>
+  </div>
+ <hr>
+ <div class="row">
+    <div class="col-3">
+        <h4 class="header">LOCATION</h4>
+    </div>
+    <div class="col-3">
+        <h5 class="header">Rivne, Ukraine</h5>
+    </div>
+    <div class="col-3">
+        <h4 class="header">Phone</h4>
+    </div>
+    <div class="col-3">
+        <h5 class="header">+380964846084</h5>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+      <div class="col-3">
+          <h4 class="header">EMAIL</h4>
+      </div>
+      <div class="col-3">
+          <h5 class="header">ivantymo99@gmail.com</h5>
+      </div>
+      <div class="col-3">
+          <h4 class="header">Position</h4>
+      </div>
+      <div class="col-3">
+          <h5 class="header">Full-stack developer</h5>
+      </div>
+    </div>
+</div>
 
-  <button type="button" class="btn btn-primary" tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Button with tooltip
-  </button>
 
-  <button type="button" class="btn btn-info" (click)="openModal(template)">Create template modal</button>
-
+</div>
   <ng-template #template>
-      <div class="modal-header">
-          <h4 class="modal-title pull-left">Modal</h4>
+      <div class="modal-header ">
+          <h4 class="modal-title pull-left">All Links</h4>
           <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
        <span aria-hidden="true">&times;</span>
      </button>
       </div>
-      <div class="modal-body"> 
-          This is a modal.
+      <div class="modal-body "> 
+                
+          <a href="https://t.me/ivantymoschuk"><fa-icon [icon]="faTelegram"></fa-icon> Telegram</a><br>        
+          <a href="https://github.com/IvanTymoschuk"><fa-icon [icon]="faGithub"></fa-icon> Github</a><br>
+          <a href="https://www.linkedin.com/in/ivan-tymoschuk-b22561168/"><fa-icon [icon]="faLinked"></fa-icon> LinkedIn</a>
+
       </div>
   </ng-template>
 </div>

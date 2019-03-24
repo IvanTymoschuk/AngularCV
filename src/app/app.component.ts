@@ -9,6 +9,3 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 export class AppComponent {
 
 }
-
-
-
